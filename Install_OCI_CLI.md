@@ -72,4 +72,4 @@ Object Storage에서 이미 생성된 Bucket의 정보를 가져오는 경우에
 OCI CLI에 대한 다양한 명령어는 [Oracle Cloud Infrastructure CLI Command Reference](https://docs.cloud.oracle.com/iaas/tools/oci-cli/latest/oci_cli_docs/index.html) 에서 확인하실 수 있습니다.
 
 
-[Go back to README.md](https://github.com/jesamkim/oci-tech/blob/master/README.md)
+**[Go back to HOME](https://jesamkim.github.io/oci-tech/)**
