@@ -1,10 +1,3 @@
-+++
-title = "VGA Console을 통한 OCI Compute 인스턴스 연결"
-thumbnailInPost = "https://github.com/jesamkim/oci-tech/blob/master/img/vga_console00.png"
-tags = ["oci", "iaas", "vga console", "vnc"]
-author - "jesam.kim"
-+++
-
 # VGA Console을 통한 OCI Compute 인스턴스 연결
 
 OCI Compute 에서는 인스턴스에 대한 VGA Console 접속을 지원 합니다. VGA Console 을 통해 인스턴스의 Public IP 로 접속 없이 인스턴스에 접속할 수 있습니다. 
@@ -32,7 +25,8 @@ VGA Console의 경우 일반적으로 다음의 시나리오 상에서 사용할
 Compute >> Instances >> Instance Details >> Resources의 Console Connections 클릭
 Create Console Connection 선택 -> Public Key 파일을 등록 합니다.
 
-{{< img src="https://github.com/jesamkim/oci-tech/blob/master/img/vga_console01.png" title="그림1" caption="VGA Console 생성 창" >}}
+![](https://github.com/jesamkim/oci-tech/blob/master/img/vga_console01.png) 
+그림1: VGA Console 생성 창
 
 
 ## Console Connections 접속
@@ -40,32 +34,36 @@ Create Console Connection 선택 -> Public Key 파일을 등록 합니다.
 Compute >> Instances >> Instance Details >> Resources의 Console Connections 클릭
 Connect with VNC를 선택합니다.
 
-{{< img src="https://github.com/jesamkim/oci-tech/blob/master/img/vga_console02.png" title="그림2" caption="VNC를 통한 Console 접속 선택" >}}
+![](https://github.com/jesamkim/oci-tech/blob/master/img/vga_console02.png)
+그림2: VNC를 통한 Console 접속 선택
 
 Platform을 WINDOWS로 선택합니다.  
 (만약 Linux 혹은 Mac 을 사용하시는 환경에서는 Platform을 Linux/MAC OS를 선택하시면 됩니다)
 그리고 CONNECTION STRING 부분을 복사하여 메모장에 붙여넣습니다. 
 
-{{< img src="https://github.com/jesamkim/oci-tech/blob/master/img/vga_console03.png" title="그림3" caption="Windows 플랫폼에서의 VNC Connection String 창" >}}
+![](https://github.com/jesamkim/oci-tech/blob/master/img/vga_console03.png)
+그림3: Windows 플랫폼에서의 VNC Connection String 창
 
 메모장에 붙여넣은 CONNECTION STRING에서 Private Key 부분을 본인의 환경에 맞게 수정해야 합니다.
 이탤릭체의 부분(Private Key)을 Private Key가 있는 절대경로로 수정합니다. 
 (본 환경에서는 D:\privateKey.ppk 가 절대 경로 입니다)
 
-| Start-Job { Echo N | plink.exe -i d:\privateKey.ppk -N -ssh -P 443 -l |
-| ocid1.instanceconsoleconnection.oc1.iad.abuwcljt5kejuuy7piveobg4ng5zimaajwdhj4hggzmwarg5uhrcfk26m6ib -L |
-| 5905:ocid1.instance.oc1.iad.abuwcljtbkooty5o6fsqvs5hvtvewrkoojicpqravrfezo7gkgiertt3upxa:5905 instance-console.us-ashburn-1.oraclecloud.com }; sleep 5; |
-| plink.exe -i d:\privateKey.ppk -N -L 5900:localhost:5900 -P 5905 localhost -l |
-| ocid1.instanceconsoleconnection.oc1.iad.abuwcljt5kejuuy7piveobg4ng5zimaajwdhj4hggzmwarg5uhrcfk26m6ib |
+	Start-Job { Echo N | plink.exe -i d:\privateKey.ppk -N -ssh -P 443 -l
+	ocid1.instanceconsoleconnection.oc1.iad.abuwcljt5kejuuy7piveobg4ng5zimaajwdhj4hggzmwarg5uhrcfk26m6ib -L
+	5905:ocid1.instance.oc1.iad.abuwcljtbkooty5o6fsqvs5hvtvewrkoojicpqravrfezo7gkgiertt3upxa:5905 instance-console.us-ashburn-
+	1.oraclecloud.com }; sleep 5; plink.exe -i d:\privateKey.ppk -N -L 5900:localhost:5900 -P 5905 localhost -l 
+	ocid1.instanceconsoleconnection.oc1.iad.abuwcljt5kejuuy7piveobg4ng5zimaajwdhj4hggzmwarg5uhrcfk26m6ib
 
 Power Shell을 열고 위의 String 붙여넣기 하면, OCI Instance 와 SSH 터널링이 됩니다.
 만약 Power Shell 창을 닫게 되면 터널링이 끊어집니다. 따라서 Power Shell 창은 닫지 마시기 바랍니다.
 
-{{< img src="https://github.com/jesamkim/oci-tech/blob/master/img/vga_console04.png" title="그림4" caption="Power Shell에서 Connection String 실행" >}}
+![](https://github.com/jesamkim/oci-tech/blob/master/img/vga_console04.png)
+그림4: Power Shell에서 Connection String 실행
 
 VNC Viewer를 열고, localhost:5900 으로 접속하면 터널링된 Instance로 VGA Connection이 완료됩니다.
 
-{{< img src="https://github.com/jesamkim/oci-tech/blob/master/img/vga_console05.png" title="그림5" caption="VNC Viewr로 localhost:5900 으로 리눅스 인스턴스 접속" >}}
+![](https://github.com/jesamkim/oci-tech/blob/master/img/vga_console05.png)
+그림5: VNC Viewr로 localhost:5900 으로 리눅스 인스턴스 접속
 
 
 ### 참조자료
