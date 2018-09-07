@@ -5,11 +5,11 @@ OCI Compute 에서는 인스턴스에 대한 VGA Console 접속을 지원 합니
 > 일반적인 전산실 환경을 예로 들면, 운영팀은 전산실에 있는 리눅스 서버에 IP로 접속을 할 수 있습니다. 하지만 해당 리눅스에 부팅 문제 등으로 IP를 통한 접속이 힘든 경우가 있는데, 이때는 물리서버에 직접 키보드, 모니터를 연결하여 troubleshooting을 하게 됩니다. 이러한 경우 처럼 물리적인 서버에 키보드, 마우스를 직접 연결하여 인스턴스를 볼 수 있게 하는 것이 OCI의 VGA Console 기능 입니다.
 
 VGA Console의 경우 일반적으로 다음의 시나리오 상에서 사용할 수 있습니다.
-	- OCI Compute instance에서 Public IP 접속이 안되는 상황에서 troubleshooting을 할 경우
-	- 잘못된 Firewall rule로 인해 외부 및 내부 연결이 막혔을 경우
-	- RDP를 사용하지 않고 Windows instance에 접속하는 경우
+- OCI Compute instance에서 Public IP 접속이 안되는 상황에서 troubleshooting을 할 경우
+- 잘못된 Firewall rule로 인해 외부 및 내부 연결이 막혔을 경우
+- RDP를 사용하지 않고 Windows instance에 접속하는 경우
 	
-여기서 Client PC platform은 Windows를 기준으로 설명하겠습니다.
+Client PC platform은 Windows를 기준으로 설명하겠습니다.
 
 
 ## 사전 준비 사항
