@@ -1,4 +1,4 @@
-# Oracle Cloud Infrastructure Techical Guide
+# Oracle Cloud Infrastructure Technical Guide
 To share technical tips of Oracle Cloud Infrastructure by Jesam Kim
 
 ## Contents
