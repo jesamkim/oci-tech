@@ -1,9 +1,9 @@
-# OCI-CLI 설치 (Oracle Linux 7.4 or later)
+# OCI-CLI 설치 (Oracle Linux 7)
 
 
 ## Prerequisites
 
-- OS : Oracle Linux 7 (테스트 환경은 OL 7.4 및 7.5 에서 진행하였습니다)
+- OS : Oracle Linux 7 (테스트 환경은 OL 7.4 과 7.5 에서 진행하였습니다)
 
 
 ## To Installation the CLI
