@@ -67,8 +67,8 @@ VNC Viewer를 열고, localhost:5900 으로 접속하면 터널링된 Instance�
 
 
 ### 참조자료
-	- [OCI Public Document - Instance Console Connections](https://docs.cloud.oracle.com/iaas/Content/Compute/References/serialconsole.htm?tocpath=Services%7CCompute%7C_____14)
-	- [OCI Blogs - Announcing VGA Console support for Oracle Cloud Infrastructure Virtual Machines](https://blogs.oracle.com/cloud-infrastructure/announcing-vga-console-support-for-oracle-cloud-infrastructure-virtual-machines)
+[OCI Public Document - Instance Console Connections](https://docs.cloud.oracle.com/iaas/Content/Compute/References/serialconsole.htm?tocpath=Services%7CCompute%7C_____14)
+[OCI Blogs - Announcing VGA Console support for Oracle Cloud Infrastructure Virtual Machines](https://blogs.oracle.com/cloud-infrastructure/announcing-vga-console-support-for-oracle-cloud-infrastructure-virtual-machines)
 	
 [Go back to README.md](https://github.com/jesamkim/oci-tech/blob/master/README.md)
 	
