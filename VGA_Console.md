@@ -25,8 +25,8 @@ Client PC platform은 Windows를 기준으로 설명하겠습니다.
 Compute >> Instances >> Instance Details >> Resources의 Console Connections 클릭
 Create Console Connection 선택 -> Public Key 파일을 등록 합니다.
 
+- 그림1: VGA Console 생성 창
 ![](https://github.com/jesamkim/oci-tech/blob/master/img/vga_console01.png) 
-그림1: VGA Console 생성 창
 
 
 ## Console Connections 접속
@@ -34,15 +34,15 @@ Create Console Connection 선택 -> Public Key 파일을 등록 합니다.
 Compute >> Instances >> Instance Details >> Resources의 Console Connections 클릭
 Connect with VNC를 선택합니다.
 
+- 그림2: VNC를 통한 Console 접속 선택
 ![](https://github.com/jesamkim/oci-tech/blob/master/img/vga_console02.png)
-그림2: VNC를 통한 Console 접속 선택
 
 Platform을 WINDOWS로 선택합니다.  
 (만약 Linux 혹은 Mac 을 사용하시는 환경에서는 Platform을 Linux/MAC OS를 선택하시면 됩니다)
 그리고 CONNECTION STRING 부분을 복사하여 메모장에 붙여넣습니다. 
 
+- 그림3: Windows 플랫폼에서의 VNC Connection String 창
 ![](https://github.com/jesamkim/oci-tech/blob/master/img/vga_console03.png)
-그림3: Windows 플랫폼에서의 VNC Connection String 창
 
 메모장에 붙여넣은 CONNECTION STRING에서 Private Key 부분을 본인의 환경에 맞게 수정해야 합니다.
 이탤릭체의 부분(Private Key)을 Private Key가 있는 절대경로로 수정합니다. 
@@ -57,13 +57,13 @@ Platform을 WINDOWS로 선택합니다.
 Power Shell을 열고 위의 String 붙여넣기 하면, OCI Instance 와 SSH 터널링이 됩니다.
 만약 Power Shell 창을 닫게 되면 터널링이 끊어집니다. 따라서 Power Shell 창은 닫지 마시기 바랍니다.
 
+- 그림4: Power Shell에서 Connection String 실행
 ![](https://github.com/jesamkim/oci-tech/blob/master/img/vga_console04.png)
-그림4: Power Shell에서 Connection String 실행
 
 VNC Viewer를 열고, localhost:5900 으로 접속하면 터널링된 Instance로 VGA Connection이 완료됩니다.
 
+- 그림5: VNC Viewr로 localhost:5900 으로 리눅스 인스턴스 접속
 ![](https://github.com/jesamkim/oci-tech/blob/master/img/vga_console05.png)
-그림5: VNC Viewr로 localhost:5900 으로 리눅스 인스턴스 접속
 
 
 ### 참조자료
