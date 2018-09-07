@@ -118,4 +118,4 @@ OCI의 Object Storage는 AWS S3 호환 API로서 CloudBerry Explorer for Amazon 
 [Oracle Public Document](https://docs.cloud.oracle.com/iaas/Content/Object/Tasks/s3compatibleapi.htm?tocpath=Services%7CObject%20Storage%7C_____8)
 
 
-[Go back to README.md](https://github.com/jesamkim/oci-tech/blob/master/README.md)
+**[Go back to HOME](https://jesamkim.github.io/oci-tech/)**
