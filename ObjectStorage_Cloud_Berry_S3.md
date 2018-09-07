@@ -29,7 +29,8 @@ Object Storage 버킷을 생성할 COMPARTMENT를 지정합니다.
 Storage Tier는 STANDARD 또는 ARCHIEVE 중 하나를 선택합니다.
 
 	- STANDARD : 일반적인 Object Storage의 타입 입니다.
-	- ARCHIEVE : 보관용으로 사용하는 데이터를 Archieve 하며, 비용이 절약 됩니다. 단, Object를 다시 읽어 올때 First time to read의 경우 4시간 정도 소요됩니다.
+	- ARCHIEVE : 보관용으로 사용하는 데이터를 Archieve 하며, 비용이 절약 됩니다. 
+		     단, Object를 다시 읽어 올때 First time to read의 경우 4시간 정도 소요됩니다.
 	
 ![](https://github.com/jesamkim/oci-tech/blob/master/img/cloudberry_s3api03.png)
 
