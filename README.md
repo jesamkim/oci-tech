@@ -1,7 +1,7 @@
 # Oracle Cloud Infrastructure - Technical Tips
 
 - Description : To share technical tips of Oracle Cloud Infrastructure
-- Author : Jesam Kim (Senior Sales Consultant - Infra Cloud SE Team in Oracle Korea)
+- Author : **Jesam Kim** (Senior Sales Consultant - Infra Cloud SE Team in Oracle Korea)
 
 ## Contents
 
