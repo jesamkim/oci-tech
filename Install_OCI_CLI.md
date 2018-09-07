@@ -17,7 +17,8 @@ OCI CLI는 간단하게 자동 설치할 수 있습니다.
 	$ sudo yum -y install gcc libffi-devel python-devel openssl-devel
 	$ sudo easy_install pip
 	
-	https://github.com/oracle/oci-cli/releases/download/v2.4.18/oci-cli-2.4.18.zip 다운로드 후 압축 풀고 해당 디렉토리 이동
+	https://github.com/oracle/oci-cli/releases/download/v2.4.18/oci-cli-2.4.18.zip 다운로드 
+	그리고 압축 풀고 해당 디렉토리 이동
 	
 	$ sudo pip install oci_cli-2.4.18-py2.py3-none-any.whl
 	$ sudo pip install oci-cli
