@@ -86,13 +86,14 @@ Select Cloud Storage 창에서 “S3 Compatible” 를 더블클릭 합니다.
 ![](https://github.com/jesamkim/oci-tech/blob/master/img/cloudberry_s3api13.png)
 
 아래와 같이 접속 정보를 입력합니다.
+
 	- Display name : 원하는 이름을 입력합니다.
 	- Service point : 테넌트이름.compat.objectstorage.리전이름.oraclecloud.com 형식으로 입력합니다.
-		ex) jaykim000.compat.objectstorage.us-ashburn-1.oraclecloud.com
+			  ex) jaykim000.compat.objectstorage.us-ashburn-1.oraclecloud.com
 	- Access Key : OCI 콘솔의 Amazon S3 Compatibility API Keys에서 만든 키의 OCID (앞에서 메모장에 복사하였음)
 	- Secret Key : 키 생성 단계에서 Generate Key 한 값을 지정 (앞에서 메모장에 복사하였음)
 	- Signature version : 여기서 “4”로 지정
-
+	
 ![](https://github.com/jesamkim/oci-tech/blob/master/img/cloudberry_s3api14.png)
 
 위와 같이 입력 후 “Test Connection” 버튼을 누릅니다. Connection success 가 나오면 성공 입니다.
