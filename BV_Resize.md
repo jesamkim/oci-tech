@@ -2,7 +2,7 @@
 
 
 OCI에서 Compute Instance를 생성하는 경우, Boot Volume을 기본 사이즈 이상으로 설정하는 경우가 있습니다.
-하지만 리눅스의 경우 Provisioning 이후 접속을 해서 보면, Boot 영역의 사이즈가 기본 사이즈로 설정되어 있습니다.
+하지만 리눅스의 경우 Provisioning 이후 접속 해보면 Boot 영역의 사이즈가 기본 사이즈로 설정되어 있습니다.
 
 Oracle Linux 7.5의 경우, Boot Volume size를 100GB로 설정한 뒤 Provisioning 했는데 접속해서 보면 root영역 ( / )이 38.4GB 로 설정되어 있습니다.
 
