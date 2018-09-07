@@ -21,4 +21,4 @@ Fault Domain 설정은 매우 간단합니다. API, CLI 또는 웹 콘솔을 사
 Fault Domain은 무과금 서비스이며, 자세한 내용은 [OCI Public Document](https://docs.cloud.oracle.com/iaas/Content/General/Concepts/regions.htm#fault), [Compute FAQ](https://cloud.oracle.com/compute/faq)에서 확인하실 수 있습니다.
 
 
-[Go back to README.md](https://github.com/jesamkim/oci-tech/blob/master/README.md)
+**[Go back to HOME](https://jesamkim.github.io/oci-tech/)**
