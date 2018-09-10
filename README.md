@@ -11,4 +11,4 @@
 4. [OCI CLI 설치 및 설정](https://github.com/jesamkim/oci-tech/blob/master/Install_OCI_CLI.md)
 5. [리눅스 Boot 파티션 Resize 하기](https://github.com/jesamkim/oci-tech/blob/master/BV_Resize.md)
 
-...
+... 더 많은 정보는 ![Jesam's Blog](https://jesamkim.github.io) 를 방문하세요.
