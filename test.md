@@ -8,10 +8,10 @@ IPSec VPN은 데이터 트래픽을 암호화하여 보안을 추가합니다. V
 ## Option 2: Cloud Exchange를 통한 연결
 다음 테이블에서는 2가지 경우에 대한 장단점을 나타냅니다.
 
-..                | Pros            | Cons           .
+                  | Pros            | Cons           
 ------------------|-----------------|----------------
-VRS               | Easy            | No PublicIP
-DPR               | Dynamic         | Limitations
+VRS               | Easy<br>Chip            | No PublicIP
+DPR               | Dynamic         | Limitations<br>others
 
 ![](Connectivity%20Option%20Details/blog_interconnectivity_1.png.jpeg)
 
